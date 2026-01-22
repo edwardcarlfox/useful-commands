@@ -37,3 +37,23 @@ For other systems
 * where - print the current stack
 * threads - print all the threads
 * thread - print the current thread
+
+# Maven
+Some commonly used Maven commands (plugins, goals etc.)
+
+**Use sepcific files**
+
+	mvn -f <another_pom> -s <another_settings> <goal|phase|lifecycle>
+
+**Find available goals of a plugin**
+
+	mvn help:describe -Dplugin=compiler
+	mvn help:describe -Dplugin=compiler -Ddetail
+
+**List dependencies**
+
+	mvn dependency:tree
+
+**Download a dependency**
+
+	mvn dependency:copy -Dartifact=<group_id>:<artifact_id>:<version> -DoutputDirectory=<download_dir>

@@ -57,3 +57,10 @@ Some commonly used Maven commands (plugins, goals etc.)
 **Download a dependency**
 
 	mvn dependency:copy -Dartifact=<group_id>:<artifact_id>:<version> -DoutputDirectory=<download_dir>
+
+# SSH
+
+**Create an SSH key on a remote server**
+
+	ssh-copy-id -f -i path/to/key.pub username@remoteHost
+
